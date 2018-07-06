@@ -20,7 +20,7 @@ $(function() {
 
     // slider
     if ($('.slider__item').length > 1) {
-        $('.slider__list').slick({
+        $('.slider__wrapper').slick({
             arrows: false,
             dots: true,
             respondTo: 'window',
@@ -29,7 +29,7 @@ $(function() {
             speed: 800,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            //autoplay: true,
             autoplaySpeed: 5000
         });
     }
