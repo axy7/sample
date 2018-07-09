@@ -101,7 +101,6 @@ a[href^="tel:"] {
     border-radius: 100%;
     margin-top: -30px;
     transition: .2s;
-    -webkit-transition: .2s;
     text-align: center;
     cursor: pointer;
 }
@@ -193,21 +192,6 @@ a[href^="tel:"] {
     height: 545px;
 }
 
-.popup__close {
-    position: absolute;
-    font-size: 35px;
-    color: #000;
-    right: -30px;
-    top: -30px;
-    cursor: pointer;
-    z-index: 1;
-    transition: .2s;
-}
-
-.popup__close:hover {
-    color: grey;
-}
-
 .input-text {
     display: block;
     border: 1px solid #000;
@@ -228,7 +212,6 @@ a[href^="tel:"] {
     font-size: 60px;
     cursor: pointer;
     transition: .2s;
-    -webkit-transition: .2s;
     z-index: 1;
     font-family: serif;
 }
