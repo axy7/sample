@@ -169,7 +169,7 @@ a[href^="tel:"] {
 }
 
 .popup {
-    background-color: rgba(84, 0, 106, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
     position: fixed;
     height: 100%;
@@ -180,16 +180,18 @@ a[href^="tel:"] {
     z-index: 11;
 }
 
+.popup__flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .popup__wrapper {
     padding: 50px 94px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 529px;
-    height: 545px;
+    width: 500px;
+    background: #fff;
 }
 
 .input-text {
@@ -207,8 +209,8 @@ a[href^="tel:"] {
 
 .close {
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     font-size: 60px;
     cursor: pointer;
     transition: .2s;
