@@ -1,7 +1,8 @@
 $(function() {
 	// popup
-	$('.js-order-tour').click(function(){
-		$('.popup._order').fadeIn();
+	$('.js-open-callback').click(function(){
+		$('.popup._callback').fadeIn();
+		$('.popup._callback .input-text:eq(0)').focus();
 	});	
 	$('.popup').click(function() {
 		event = event || window.event;
@@ -31,7 +32,7 @@ $(function() {
 	}
 
 	// other
-	$(".input__text, .input__textarea").textPlaceholder();
+	$(".input-text, .input-textarea").textPlaceholder();
 	$(".inputmask").inputmask("+7 (999) 999 99 99", { "clearIncomplete": true });
 	$(".fb").attr('rel','group').fancybox({padding : 0, helpers:{overlay: {locked: false}}});
 });
