@@ -1,26 +1,26 @@
 body {
     font: normal normal 16px/1.2 'lato', Arial, Helvetica, serif;
     color: #523534;
-    min-width: 1144px;
+    min-width: 320px;
     text-align: center;
     background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    min-height: 100%;
 }
 
 .main {
-    min-height: 100%;
     overflow: hidden;
-}
-
-.hfooter {
-    clear: both;
-    height: 230px;
+    flex-shrink: 0;
 }
 
 p {
@@ -39,7 +39,7 @@ svg {
 
 .center {
     margin: 0 auto;
-    width: 1144px;
+    width: 1220px;
     text-align: left
 }
 
@@ -85,8 +85,8 @@ a[href^="tel:"] {
 }
 
 .footer {
-    height: 230px;
-    margin-top: -230px;
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 .slick-arrow {
