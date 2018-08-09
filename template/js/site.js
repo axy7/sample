@@ -20,7 +20,7 @@ $(function() {
 	});
 
 	// slider
-	if ($('.slider__item').length > 1) {
+	if ($('.slider-item').length > 1) {
 		$('.slider__wrapper').slick({
 			arrows: false,
 			dots: true,
