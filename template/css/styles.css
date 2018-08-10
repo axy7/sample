@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-bold.woff2') format('woff2'), url('../fonts/lato-bold.woff') format('woff');
+    font-weight: bold;
+}
+
 body {
     font: normal normal 16px/1.2 'lato', Arial, Helvetica, serif;
     color: #523534;
@@ -63,12 +69,6 @@ form ._error {
 a[href^="tel:"] {
     cursor: default;
     text-decoration: none
-}
-
-@font-face {
-    font-family: 'lato';
-    src: url('../fonts/lato-bold.woff2') format('woff2'), url('../fonts/lato-bold.woff') format('woff');
-    font-weight: bold;
 }
 
 .button {
