@@ -203,6 +203,10 @@ a[href^="tel:"] {
     background: none;
 }
 
+.input-text:focus {
+    border-color: #c2c2c2;
+}
+
 .input-text.error, .input-text._error {
     border-color: red
 }
@@ -222,8 +226,59 @@ a[href^="tel:"] {
     color: #ff010a;
 }
 
-.input-text:focus {
-    border-color: #c2c2c2;
+.popup__title {
+    margin-bottom: 54px;
+    font-size: 38px;
+}
+
+.input-checkbox {
+    display: flex;
+    position: relative;
+    text-align: left;
+    cursor:  pointer;
+}
+
+.input-checkbox__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+}
+
+.input-checkbox__arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #989898;
+    border-radius: 100%;
+    margin-right: 17px;
+    color: transparent;
+    transition: .2s;
+}
+
+.input-checkbox__input:checked ~ .input-checkbox__arrow {
+    color: #0c9b86;
+}
+
+.input-checkbox__arrow svg {
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input-checkbox__text {
+    letter-spacing: 0.3px;
+}
+
+.input-checkbox__text a {
+    text-decoration: underline;
+}
+
+.input-checkbox__text a:hover {
+    text-decoration: none
 }
 
 .content__text a:not([class]) {
