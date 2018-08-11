@@ -27,6 +27,10 @@ $(function() {
 			respondTo: 'window',
 			fade: true,
 			speed: 800,
+			//responsive: [
+			    //{breakpoint: 721,settings: {slidesToShow: 1}},
+			    //{breakpoint: 501,settings: {slidesToShow: 1}}
+			//],
 			//autoplay: true,
 		});
 	}
