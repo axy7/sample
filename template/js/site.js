@@ -1,4 +1,10 @@
 $(function() {
+	// menu
+	$('.js-action-menu').click(function(){
+		$(this).toggleClass('_active');
+		$('.header-menu').slideToggle();
+	});
+	
 	// popup
 	$('.js-open-callback').click(function(){
 		$('.popup._callback').fadeIn();
