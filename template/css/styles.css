@@ -285,3 +285,74 @@ a[href^="tel:"] {
 .content__text a:not([class]) {
     text-decoration: underline
 }
+
+.burger {
+    width: 40px;
+    height: 40px;
+}
+
+.burger i {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: #757575;
+    position: absolute;
+    left: 0;
+    transition: .3s;
+}
+
+.burger i:nth-child(1) {
+    top: 0;
+}
+
+.burger i:nth-child(2) {
+    top: 50%;
+    margin-top: -3px;
+}
+
+.burger i:nth-child(3) {
+    bottom: 0;
+}
+
+.burger._active i {
+    background: #ffaa00;
+}
+
+.burger._active i:nth-child(1) {
+    top: 50%;
+    opacity: 0;
+}
+
+.burger._active i:nth-child(2) {
+    background: transparent;
+}
+
+.burger._active i:nth-child(3) {
+    bottom: 50%;
+    opacity: 0;
+}
+
+.burger i:nth-child(2):after, .burger i:nth-child(2):before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffaa00;
+    transition: inherit;
+    opacity: 0;
+}
+
+.burger._active i:nth-child(2):after, .burger._active i:nth-child(2):before {
+    opacity: 1;
+}
+
+.burger._active i:nth-child(2):after {
+    transform: rotate(45deg);
+}
+
+.burger._active i:nth-child(2):before {
+    transform: rotate(-45deg);
+}
