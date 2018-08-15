@@ -259,7 +259,7 @@ a[href^="tel:"] {
 }
 
 .input-checkbox__input:checked ~ .input-checkbox__arrow {
-    color: #0c9b86;
+    color: #000000;
 }
 
 .input-checkbox__arrow svg {
@@ -271,6 +271,7 @@ a[href^="tel:"] {
 
 .input-checkbox__text {
     letter-spacing: 0.3px;
+    flex: 1 1;
 }
 
 .input-checkbox__text a {
