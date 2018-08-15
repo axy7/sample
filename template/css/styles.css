@@ -201,6 +201,7 @@ a[href^="tel:"] {
     margin-bottom: 30px;
     padding: 15px 0;
     background: none;
+    transition: .2s
 }
 
 .input-text:focus {
