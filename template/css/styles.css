@@ -270,7 +270,6 @@ a[href^="tel:"] {
 }
 
 .input-checkbox__text {
-    letter-spacing: 0.3px;
     flex: 1 1;
 }
 
