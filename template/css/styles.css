@@ -358,3 +358,27 @@ a[href^="tel:"] {
 .burger._active i:nth-child(2):before {
     transform: rotate(-45deg);
 }
+
+.breadcrumbs {
+    list-style: none;
+    padding: 20px 0 17px 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.breadcrumbs li {
+    display: inline-block
+}
+
+.breadcrumbs li:after {
+    content: '|';
+    margin: 0 8px;
+}
+
+.breadcrumbs li._active:after {
+    display: none;
+}
+
+.breadcrumbs li:hover a {
+    text-decoration: underline;
+}
