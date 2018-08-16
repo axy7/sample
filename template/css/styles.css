@@ -382,3 +382,7 @@ a[href^="tel:"] {
 .breadcrumbs li:hover a {
     text-decoration: underline;
 }
+
+.breadcrumbs li._active {
+    color: red;
+}
