@@ -81,6 +81,10 @@ a[href^="tel:"] {
     cursor: pointer;
 }
 
+.button:focus {
+    opacity: .8
+}
+
 .title {
 }
 
