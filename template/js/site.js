@@ -24,6 +24,10 @@ $(function() {
 			$('.popup').fadeOut();
 		}
 	});
+	if ($('.popup .notetext, .popup .errortext').length > 0) {
+		$('.popup .notetext, .popup .errortext').parents('.popup').show();
+	    history.pushState('', '', window.location.pathname);
+	}
 
 	// slider
 	if ($('.slider-item').length > 1) {
