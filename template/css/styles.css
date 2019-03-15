@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'lato';
-    src: url('../fonts/lato-bold.woff2') format('woff2'), url('../fonts/lato-bold.woff') format('woff');
+    font-family: 'Font';
+    src: url('../fonts/font.woff2') format('woff2'), url('../fonts/font.woff') format('woff');
     font-weight: bold;
 }
 
 body {
-    font: normal normal 16px/1.2 'lato', Arial, Helvetica, serif;
+    font: normal normal 16px/1.2 'Font', Arial, Helvetica, serif;
     color: #000000;
     min-width: 320px;
     text-align: center;
@@ -25,7 +25,7 @@ html, body {
 
 main {
     overflow: hidden;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 p {
@@ -34,7 +34,7 @@ p {
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none
 }
 
 svg {
@@ -49,8 +49,8 @@ svg {
     text-align: left
 }
 
-._hidden {
-    display: none;
+._hidden, .hidden {
+    display: none
 }
 
 form .errors {
@@ -74,7 +74,7 @@ a[href^="tel:"] {
 .button {
     background: #eeeeee;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 15px;
     display: inline-block;
     transition: .2s;
     border: 0;
@@ -82,7 +82,11 @@ a[href^="tel:"] {
 }
 
 .button:focus {
-    opacity: .8
+    opacity: .5
+}
+
+.button:hover {
+    background: grey
 }
 
 .title {
@@ -98,39 +102,31 @@ footer {
     top: 50%;
     z-index: 1;
     font-size: 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: none;
     border: 0;
     color: #fff;
     width: 60px;
-    border-radius: 100%;
+    height: 60px;
     margin-top: -30px;
     transition: .2s;
-    text-align: center;
     cursor: pointer;
 }
 
+.slick-arrow:hover {
+    color: grey;
+}
+
 .slick-prev {
-    left: 30px;
+    left: 30px
 }
 
 .slick-next {
-    right: 30px;
+    right: 30px
 }
 
-.slick-arrow:before {
-    font: normal normal normal 24px/58px FontAwesome;
-}
-
-.slick-prev:before {
-    content: "\f104";
-}
-
-.slick-next:before {
-    content: "\f105";
-}
-
-.slick-arrow:hover {
-    background: rgba(255, 255, 255, 0.6);
+.slick-arrow svg {
+    width: 30px;
+    height: 30px;
 }
 
 .slick-dots {
@@ -145,7 +141,7 @@ footer {
     display: -ms-flexbox !important;
     display: flex !important;
     justify-content: center;
-    list-style: none;
+    list-style: none
 }
 
 .slick-dots li {
@@ -156,20 +152,20 @@ footer {
     height: 15px;
     margin: 0 10px;
     border-radius: 100%;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .slick-dots li.slick-active, .slick-dots li:hover {
-    background: #fff;
+    background: #fff
 }
 
 .slick-dots li * {
     border: 0;
-    background: none;
+    background: none
 }
 
 .slick-list, .slick-track {
-    height: 100%;
+    height: 100%
 }
 
 .popup {
@@ -200,16 +196,16 @@ footer {
 
 .input-text {
     display: block;
-    border: 1px solid #000;
+    border: 1px solid;
     width: 100%;
-    margin-bottom: 30px;
-    padding: 15px 0;
+    margin-bottom: 20px;
+    padding: 15px;
     background: none;
-    transition: .2s
+    transition: .2s;
 }
 
 .input-text:focus {
-    border-color: #c2c2c2;
+    border-color: #c2c2c2
 }
 
 .input-text.error, .input-text._error {
@@ -218,9 +214,10 @@ footer {
 
 .popup__close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     font-size: 60px;
+    line-height: 30px;
     cursor: pointer;
     transition: .2s;
     z-index: 1;
@@ -228,28 +225,28 @@ footer {
 }
 
 .popup__close:hover {
-    color: #ff010a;
+    color: #ff010a
 }
 
 .popup__title {
     margin-bottom: 54px;
-    font-size: 38px;
+    font-size: 38px
 }
 
 .input-checkbox {
     display: flex;
     position: relative;
     text-align: left;
-    cursor:  pointer;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .input-checkbox__input {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    opacity: 0;
+    clip: rect(0 0 0 0);
 }
 
 .input-checkbox__arrow {
@@ -260,22 +257,22 @@ footer {
     border-radius: 100%;
     margin-right: 17px;
     color: transparent;
-    transition: .2s;
+    transition: .2s
 }
 
 .input-checkbox__input:checked ~ .input-checkbox__arrow {
-    color: #000000;
+    color: #000000
 }
 
 .input-checkbox__arrow svg {
     width: 20px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0
 }
 
 .input-checkbox__text {
-    flex: 1 1;
+    flex: 1 1
 }
 
 .input-checkbox__text a {
@@ -301,41 +298,41 @@ footer {
     display: block;
     width: 100%;
     height: 6px;
-    background: #757575;
+    background: #000;
     position: absolute;
     left: 0;
-    transition: .3s;
+    transition: .3s
 }
 
 .burger i:nth-child(1) {
-    top: 0;
+    top: 0
 }
 
 .burger i:nth-child(2) {
     top: 50%;
-    margin-top: -3px;
+    margin-top: -3px
 }
 
 .burger i:nth-child(3) {
-    bottom: 0;
+    bottom: 0
 }
 
 .burger._active i {
-    background: #ffaa00;
+    background: grey
 }
 
 .burger._active i:nth-child(1) {
     top: 50%;
-    opacity: 0;
+    opacity: 0
 }
 
 .burger._active i:nth-child(2) {
-    background: transparent;
+    background: transparent
 }
 
 .burger._active i:nth-child(3) {
     bottom: 50%;
-    opacity: 0;
+    opacity: 0
 }
 
 .burger i:nth-child(2):after, .burger i:nth-child(2):before {
@@ -346,47 +343,43 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffaa00;
+    background: grey;
     transition: inherit;
     opacity: 0;
 }
 
 .burger._active i:nth-child(2):after, .burger._active i:nth-child(2):before {
-    opacity: 1;
+    opacity: 1
 }
 
 .burger._active i:nth-child(2):after {
-    transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 
 .burger._active i:nth-child(2):before {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
 
 .breadcrumbs {
+    display: block;
     list-style: none;
-    padding: 20px 0 17px 0;
-    font-size: 14px;
-    color: #666666;
+    padding: 20px 0
 }
 
 .breadcrumbs li {
     display: inline-block
 }
 
-.breadcrumbs li:after {
+.breadcrumbs li:not(:last-child):after {
     content: '|';
-    margin: 0 8px;
-}
-
-.breadcrumbs li._active:after {
-    display: none;
+    margin: 0 5px
 }
 
 .breadcrumbs li:hover a {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .breadcrumbs li._active {
-    color: red;
+    color: grey;
+    cursor: default;
 }
