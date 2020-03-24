@@ -383,3 +383,7 @@ footer {
     color: grey;
     cursor: default;
 }
+
+.fancybox-navigation{
+    height:100%
+}
