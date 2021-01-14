@@ -6,7 +6,6 @@
 
 body {
     font: normal normal 16px/1.2 'Font', Arial, Helvetica, serif;
-    font-display: swap
     color: #000000;
     min-width: 320px;
     text-align: center;
@@ -16,6 +15,7 @@ body {
     display: -ms-flex;
     display: flex;
     flex-direction: column;
+    font-display: swap
 }
 
 html, body {
